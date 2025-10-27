@@ -6,7 +6,7 @@ import os
 # Ensure s.py is imported from the project root
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
-from s import app  # import the Flask app from s.py
+from app import app  # import the Flask app from s.py
 
 @app.route("/api")
 def api_home():
